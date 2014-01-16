@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{{ site.base_path }}{{ site.assets_path }}/css/main.css">
     <!-- Bootswatch -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.3/spacelab/bootstrap.min.css">
     
   </head>
   <body>
     
-    <div class="site">
-      
+    <div id="site">
       {{ content }}
-      
       <footer class="footer container">
-            {{ site.time | date: "%Y" }} - <a href="mailto:hello@touris.tk">hello@touris.tk</a>
+        {{ site.time | date: "%Y" }} - <a href="mailto:hello@touris.tk">hello@touris.tk</a>
       </footer>
     </div>
     
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
   </body>
 </html>

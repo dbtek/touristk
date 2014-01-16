@@ -1,2 +1,5 @@
 name: Touristk
 markdown: redcarpet
+
+base_path: '/'
+assets_path: 'assets/'
