@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.3/spacelab/bootstrap.min.css">
+    
+  </head>
+  <body>
+    
+    <div class="site">
+      
+      {{ content }}
+      
+      <footer class="footer container">
+            {{ site.time | date: "%Y" }} - <a href="mailto:hello@touris.tk">hello@touris.tk</a>
+      </footer>
+    </div>
+    
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
